@@ -1,0 +1,3 @@
+define NCSIMRC	( /usr/local/packages/cadence_2007/ius/tools/inca/files/ncsimrc, ~/.ncsimrc )
+include ./hdlrun.var
+define SNAPSHOT worklib.wb_interface:sv

@@ -1,0 +1,9 @@
+irun: 06.11-s001: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+TOOL:	irun	06.11-s001: Started on Apr 04, 2017 at 14:28:00 CDT
+irun
+	+compile
+	../wb_pkg/wb_interface.sv
+file: ../wb_pkg/wb_interface.sv
+	interface worklib.wb_interface:sv
+		errors: 0, warnings: 0
+TOOL:	irun	06.11-s001: Exiting on Apr 04, 2017 at 14:28:01 CDT  (total: 00:00:01)
