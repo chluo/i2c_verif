@@ -1,0 +1,33 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-INPUT
+"@source /usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl"
++compile
+-uvmhome
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d
+-sv_lib
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so
+-MESSAGES
+-RUN
+-SV_LIB
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmdpi.so
++EMGRLOG
+irun.log
+-XLSTIME
+1491408934
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx8664.13.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.13.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.13.20.nc/hdl.var
+-XLNAME
+irun
+-XLVERSION
+"TOOL:	irun(64)	13.20-s034"
+-XLNAME
+./INCA_libs/irun.lnx8664.13.20.nc/wario_19837

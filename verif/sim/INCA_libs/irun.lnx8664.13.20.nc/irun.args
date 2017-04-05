@@ -1,0 +1,11 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
++compile
+-uvm
+../wb_pkg/compile_test.sv
+-incdir
+../wb_pkg
+-incdir
+/usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src/

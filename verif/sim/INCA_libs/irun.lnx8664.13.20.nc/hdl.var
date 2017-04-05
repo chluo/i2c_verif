@@ -1,0 +1,6 @@
+define NCSIMRC	( /usr/local/packages/cadence_2015/incisiv13.2/tools/inca/files/ncsimrc, ~/.ncsimrc )
+include ./hdlrun.var
+define SNAPSHOT worklib.wb_interface:sv
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP (  => worklib )
+DEFINE LIB_MAP ($LIB_MAP, + => worklib )

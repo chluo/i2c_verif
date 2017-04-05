@@ -1,0 +1,14 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-INCDIR
+../wb_pkg
+-INCDIR
+/usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src/
+-I_INCDIR
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/additions/sv

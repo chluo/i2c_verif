@@ -1,0 +1,31 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.13.20.nc
+-RUNMODE
+-UVMNOSINGLESTEP
+-define
+UVM_PLI
+../wb_pkg/compile_test.sv
+-INCDIR
+../wb_pkg
+-INCDIR
+/usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src/
+-CDSLIB
+./INCA_libs/irun.lnx8664.13.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.13.20.nc/hdlrun.var
+-I_INCDIR
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/additions/sv
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.13.20.nc/xllibs
+-ALLOWUNBOUND
+-ENABLEOIGW

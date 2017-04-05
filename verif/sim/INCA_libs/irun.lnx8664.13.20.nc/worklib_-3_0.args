@@ -1,0 +1,27 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-RUNMODE
+-INCDIR
+../wb_pkg
+-INCDIR
+/usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src/
+-I_INCDIR
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/additions/sv
+-UPDATE
+-CDSLIB
+./INCA_libs/irun.lnx8664.13.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.13.20.nc/hdlrun.var
+-work
+worklib
+-UVMNOSINGLESTEP
+-define
+UVM_PLI
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/sv/src/uvm_pkg.sv
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/additions/sv/cdns_uvm_pkg.sv
