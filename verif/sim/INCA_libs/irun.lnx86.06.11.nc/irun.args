@@ -4,3 +4,4 @@
 //
 +compile
 ../wb_pkg/wb_interface.sv
+../wb_pkg/wb_transaction.sv

@@ -6,6 +6,7 @@
 ./INCA_libs/irun.lnx86.06.11.nc
 -RUNMODE
 ../wb_pkg/wb_interface.sv
+../wb_pkg/wb_transaction.sv
 -CDSLIB
 /home/ecelrc/students/cluo1/ws/uvm/practice/i2c_verif/verif/sim/INCA_libs/irun.lnx86.06.11.nc/cdsrun.lib
 -HDLVAR

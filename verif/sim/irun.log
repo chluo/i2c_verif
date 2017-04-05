@@ -1,9 +1,38 @@
-irun: 06.11-s001: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
-TOOL:	irun	06.11-s001: Started on Apr 04, 2017 at 14:28:00 CDT
+irun(64): 13.20-s034: (c) Copyright 1995-2015 Cadence Design Systems, Inc.
+TOOL:	irun(64)	13.20-s034: Started on Apr 05, 2017 at 11:15:34 CDT
 irun
 	+compile
-	../wb_pkg/wb_interface.sv
-file: ../wb_pkg/wb_interface.sv
-	interface worklib.wb_interface:sv
+	-uvm
+	../wb_pkg/compile_test.sv
+	-incdir ../wb_pkg
+	-incdir /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src/
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncvlog: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+file: ../wb_pkg/compile_test.sv
+	module worklib.compile_test:sv
 		errors: 0, warnings: 0
-TOOL:	irun	06.11-s001: Exiting on Apr 04, 2017 at 14:28:01 CDT  (total: 00:00:01)
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+TOOL:	irun(64)	13.20-s034: Exiting on Apr 05, 2017 at 11:15:34 CDT  (total: 00:00:00)

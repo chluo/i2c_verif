@@ -26,9 +26,9 @@
 
  interface wb_interface 
  #( 
-   parameter   bw_adr         =   8         , // Address bit width 
-   parameter   bw_dat         =   8         , // Data bit width  
-   parameter   granularity    =   8           // Data granularity, e.g. 8-bit granularity for a byte-addressable system 
+   parameter   BW_ADR         =   8         , // Address bit width 
+   parameter   BW_DAT         =   8         , // Data bit width  
+   parameter   GRANULARITY    =   8           // Data granularity, e.g. 8-bit granularity for a byte-addressable system 
  )( 
    input       logic          wb_clk        , // Bus clock 
    input       logic          wb_rst        , // Synchronous reset, active high 
@@ -41,15 +41,15 @@
    //
    // Local parameters
    // 
-   localparam bw_sel = bw_dat / granularity ; // Bit width of the wb_sel signal
+   localparam BW_SEL = BW_DAT / GRANULARITY ; // Bit width of the wb_sel signal
 
    //
    // Internal signals
    //
-   logic  [ bw_adr - 1 : 0 ]  wb_adr        ; // Address
-   logic  [ bw_dat - 1 : 0 ]  wb_dat_w      ; // Data to be written to slaves
-   logic  [ bw_dat - 1 : 0 ]  wb_dat_r      ; // Data read from slaves 
-   logic  [ bw_sel - 1 : 0 ]  wb_sel        ; // Slave select 
+   logic  [ BW_ADR - 1 : 0 ]  wb_adr        ; // Address
+   logic  [ BW_DAT - 1 : 0 ]  wb_dat_w      ; // Data to be written to slaves
+   logic  [ BW_DAT - 1 : 0 ]  wb_dat_r      ; // Data read from slaves 
+   logic  [ BW_SEL - 1 : 0 ]  wb_sel        ; // Which slot the data is placed in 
    logic                      wb_we         ; // Write enable, active high 
    logic                      wb_ack        ; // Acknowledge signal given by slaves
    logic                      wb_stb        ; // Strobe signal, indicating a in-progress data transfer 
@@ -78,9 +78,9 @@
    //
    // Bus read
    task wb_rd ( 
-     input  logic [ bw_adr - 1 : 0 ] rd_adr , 
-     input  logic [ bw_sel - 1 : 0 ] rd_sel , 
-     output logic [ bw_dat - 1 : 0 ] rd_dat 
+     input  logic [ BW_ADR - 1 : 0 ] rd_adr , 
+     input  logic [ BW_SEL - 1 : 0 ] rd_sel , 
+     output logic [ BW_DAT - 1 : 0 ] rd_dat 
    ) ;
      // Block until the bus is free 
      wait ( !wb_cyc && !wb_stb ) ; 
@@ -104,9 +104,9 @@
 
    // Bus write 
    task wb_wr ( 
-     input  logic [ bw_adr - 1 : 0 ] wr_adr     , 
-     input  logic [ bw_dat - 1 : 0 ] wr_dat     , 
-     input  logic [ bw_sel - 1 : 0 ] wr_sel     , 
+     input  logic [ BW_ADR - 1 : 0 ] wr_adr     , 
+     input  logic [ BW_DAT - 1 : 0 ] wr_dat     , 
+     input  logic [ BW_SEL - 1 : 0 ] wr_sel     , 
      input  logic                    wr_tagn_w    
    ) ;
      // Block until the bus is free 
