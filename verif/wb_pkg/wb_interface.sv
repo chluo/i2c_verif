@@ -75,6 +75,7 @@
    // 
    // Wishbone master transactions
    // TODO: Add support for pipelined bus transfers
+   // TODO: Add support for user defined tags
    //
    // Bus read
    task wb_rd ( 
@@ -105,9 +106,9 @@
    // Bus write 
    task wb_wr ( 
      input  logic [ BW_ADR - 1 : 0 ] wr_adr     , 
-     input  logic [ BW_DAT - 1 : 0 ] wr_dat     , 
      input  logic [ BW_SEL - 1 : 0 ] wr_sel     , 
-     input  logic                    wr_tagn_w    
+     input  logic [ BW_DAT - 1 : 0 ] wr_dat       
+     //* input  logic                    wr_tagn_w    
    ) ;
      // Block until the bus is free 
      wait ( !wb_cyc && !wb_stb ) ; 
@@ -119,7 +120,7 @@
        wb_we     <= 1'b1      ; 
        wb_cyc    <= 1'b1      ; 
        wb_stb    <= 1'b1      ;
-       wb_tagn_w <= wr_tagn_w ; 
+       //* wb_tagn_w <= wr_tagn_w ; 
      end 
 
      // Block until the ack is received

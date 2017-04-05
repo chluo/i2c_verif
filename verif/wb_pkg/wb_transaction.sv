@@ -11,7 +11,7 @@
  * ----------------------------------------------------------------------
  * Date of Creation |  04-05-2017    
  * ----------------------------------------------------------------------
- * Description      |  SystemVerilog class for Wishbone bus transactions, 
+ * Description      |  SystemVerilog class for Wishbone bus transactions. 
  *                  |  Designed for functional verification of Wishbone-
  *                  |  compliant modules. 
  * ======================================================================

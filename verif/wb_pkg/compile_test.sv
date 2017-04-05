@@ -25,5 +25,7 @@
 
    // Include any classes in wb_pkg here
    `include "wb_transaction.sv"
+   `include "wb_master_driver.sv"
+   `include "wb_master_sequencer.sv"
 
  endmodule : compile_test

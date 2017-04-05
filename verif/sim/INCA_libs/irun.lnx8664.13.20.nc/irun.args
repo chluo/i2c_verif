@@ -4,8 +4,8 @@
 //
 +compile
 -uvm
-../wb_pkg/compile_test.sv
 -incdir
-../wb_pkg
+../wb_pkg/
 -incdir
 /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src/
+../wb_pkg/compile_test.sv

@@ -1,4 +1,4 @@
-../wb_pkg/wb_interface.sv
+../wb_pkg//wb_interface.sv
 /home/ecelrc/students/cluo1/ws/uvm/practice/i2c_verif/verif/wb_pkg/wb_interface.sv
 /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src//uvm_macros.svh
 /misc/linuxws/packages/cadence_2015/incisiv13.2/tools.lnx86/methodology/UVM/CDNS-1.1d/sv/src/uvm_macros.svh
@@ -26,5 +26,9 @@
 /misc/linuxws/packages/cadence_2015/incisiv13.2/tools.lnx86/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_reg_defines.svh
 /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src//macros/uvm_deprecated_defines.svh
 /misc/linuxws/packages/cadence_2015/incisiv13.2/tools.lnx86/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_deprecated_defines.svh
-../wb_pkg/wb_transaction.sv
+../wb_pkg//wb_transaction.sv
 /home/ecelrc/students/cluo1/ws/uvm/practice/i2c_verif/verif/wb_pkg/wb_transaction.sv
+../wb_pkg//wb_master_driver.sv
+/home/ecelrc/students/cluo1/ws/uvm/practice/i2c_verif/verif/wb_pkg/wb_master_driver.sv
+../wb_pkg//wb_master_sequencer.sv
+/home/ecelrc/students/cluo1/ws/uvm/practice/i2c_verif/verif/wb_pkg/wb_master_sequencer.sv

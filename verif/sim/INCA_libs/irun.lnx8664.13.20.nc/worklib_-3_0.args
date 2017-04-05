@@ -4,7 +4,7 @@
 //
 -RUNMODE
 -INCDIR
-../wb_pkg
+../wb_pkg/
 -INCDIR
 /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src/
 -I_INCDIR
