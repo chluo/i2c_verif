@@ -76,6 +76,9 @@
        ) ; 
      else 
        `uvm_error ( "WB_MONITOR" , "Invalid bus transfer direction" ) 
+     // Checks if the select array is one-hot 
+     if ( ! trxn_collected.is_one_hot ( trxn_collected.wb_trxn_sel ) ) 
+       `uvm_error ( "WB_MONITOR" , { "Invalid select array: " , trxn_string } ) 
    endfunction : perform_checks 
 
    // Perform coverage analysis 
