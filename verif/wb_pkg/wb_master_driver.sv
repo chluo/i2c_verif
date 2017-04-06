@@ -1,6 +1,6 @@
 /* ======================================================================
  *
- * Wishbone Master Driver Class (uvm_dirver)
+ * Wishbone Master Driver Class (wb_master_driver)
  *
  * ======================================================================
  * Basic Information

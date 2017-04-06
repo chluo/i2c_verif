@@ -23,3 +23,5 @@
 /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src//wb_collector.sv
 ./wb_monitor.sv
 /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src//wb_monitor.sv
+./wb_master_agent.sv
+/usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src//wb_master_agent.sv

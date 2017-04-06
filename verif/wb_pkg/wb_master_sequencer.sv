@@ -1,6 +1,6 @@
 /* ======================================================================
  *
- * Wishbone Master Sequencer Class (uvm_sequencer)
+ * Wishbone Master Sequencer Class (wb_master_sequencer)
  *
  * ======================================================================
  * Basic Information

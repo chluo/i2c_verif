@@ -36,3 +36,5 @@
 /home/ecelrc/students/cluo1/ws/uvm/practice/i2c_verif/verif/wb_pkg/wb_collector.sv
 ../wb_pkg//wb_monitor.sv
 /home/ecelrc/students/cluo1/ws/uvm/practice/i2c_verif/verif/wb_pkg/wb_monitor.sv
+../wb_pkg//wb_master_agent.sv
+/home/ecelrc/students/cluo1/ws/uvm/practice/i2c_verif/verif/wb_pkg/wb_master_agent.sv

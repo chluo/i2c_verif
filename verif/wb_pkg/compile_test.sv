@@ -29,5 +29,6 @@
    `include "wb_master_sequencer.sv"
    `include "wb_collector.sv"
    `include "wb_monitor.sv"
+   `include "wb_master_agent.sv"
 
  endmodule : compile_test

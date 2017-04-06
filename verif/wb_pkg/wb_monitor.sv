@@ -1,6 +1,6 @@
 /* ======================================================================
  *
- * Wishbone Monitor Class (uvm_monitor)
+ * Wishbone Monitor Class (wb_monitor)
  *
  * ======================================================================
  * Basic Information
@@ -36,7 +36,7 @@
    // Export connected to the collector 
    uvm_analysis_imp  #( wb_transaction , wb_monitor ) collector_axport ; 
 
-   // Analysis port for sending transactions out to the top level env 
+   // Analysis port for sending transactions out to the top-level env 
    uvm_analysis_port #( wb_transaction ) monitor_aport ; 
 
    // UVM utilities and automation macros 

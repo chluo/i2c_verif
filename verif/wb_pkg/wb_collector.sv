@@ -1,6 +1,6 @@
 /* ======================================================================
  *
- * Wishbone Collector Class (uvm_component)
+ * Wishbone Collector Class (wb_collector)
  *
  * ======================================================================
  * Basic Information

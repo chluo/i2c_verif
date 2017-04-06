@@ -1,6 +1,6 @@
 /* ======================================================================
  * 
- * Wishbone Transcation Class (uvm_sequence_item)  
+ * Wishbone Transcation Class (wb_transaction)  
  * 
  * ======================================================================
  * Basic Information
