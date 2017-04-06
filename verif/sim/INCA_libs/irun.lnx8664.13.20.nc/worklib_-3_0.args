@@ -4,9 +4,9 @@
 //
 -RUNMODE
 -INCDIR
-../wb_pkg/
--INCDIR
 /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src/
+-INCDIR
+../wb_pkg/
 -I_INCDIR
 /usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/sv/src
 -DEFINE

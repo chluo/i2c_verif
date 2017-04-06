@@ -48,8 +48,11 @@
    endfunction : new 
    
    // Run phase 
+   // TODO: Add support for reset handling 
    virtual task run_phase ( uvm_phase phase ) ; 
      forever begin 
+       // Raise objection 
+       phase.raise_objection ( this ) ;
        // Get the next sequence item from the sequencer 
        seq_item_port.get_next_item ( req ) ; 
        // Clone the request to response
@@ -57,10 +60,12 @@
        // Correspond the response to the request 
        rsp.set_id_info ( req ) ; 
        // The response is driven on to the bus and is modified according to
-       // the slave's rsponse  
+       // the slave's response  
        drive_transaction ( rsp ) ; 
        // Sequence item finished; send the response back to the sequencer
        seq_item_port.item_done ( rsp ) ;
+       // Drop objection 
+       phase.drop_objection ( this ) ;
      end // forever
    endtask : run_phase 
 

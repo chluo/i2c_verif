@@ -9,9 +9,9 @@
 -define
 UVM_PLI
 -INCDIR
-../wb_pkg/
--INCDIR
 /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm/uvm_lib/uvm_sv/src/
+-INCDIR
+../wb_pkg/
 ../wb_pkg/compile_test.sv
 -CDSLIB
 ./INCA_libs/irun.lnx8664.13.20.nc/cdsrun.lib

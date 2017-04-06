@@ -27,5 +27,7 @@
    `include "wb_transaction.sv"
    `include "wb_master_driver.sv"
    `include "wb_master_sequencer.sv"
+   `include "wb_collector.sv"
+   `include "wb_monitor.sv"
 
  endmodule : compile_test
